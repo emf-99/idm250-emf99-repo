@@ -1,4 +1,4 @@
-<footer>&copy</footer>
+<footer>&copy idm250 ella fromherz</footer>
 
 </body>
 

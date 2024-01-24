@@ -6,12 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+<h1>
 
    <?php
     echo get_the_title();
    ?>
 
-   <p> single page </p>
+</h1>
+
+   <p> this is a single.php file </p>
 
 </body>
 </html>
