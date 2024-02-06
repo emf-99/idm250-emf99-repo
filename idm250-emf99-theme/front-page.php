@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<h1>
+<h1 class="">
 
    <?php
     echo get_the_title();
