@@ -1,4 +1,89 @@
 * {
     box-sizing: border-box;
     background-color: #F0F0F0;
+    border: #9F0202
+}
+
+li {
+    color: #9F0202;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#menu-primary-2024-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-primary-2024-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid #9F0202;
+    border-bottom: 2px solid #9F0202;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.header-logo, .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.footer-logo {
+    max-width: 10%;
+    height: auto;
+}
+
+.menu-item-30 {
+margin:0;
+padding:0;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem;
+    padding: 5rem;
+    border-top: 2px solid #9F0202;
+    border-bottom: 2px solid #9F0202;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-direction: column;
+}
+
+.date-footer, .name-footer, .class-footer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: #9F0202;
+
 }
