@@ -1,5 +1,6 @@
 <footer>
 
+<div class="footer-container">
     <div class="footer-text">
         <p class="date-footer"> &copy <?php echo date('Y'); ?></p>
         <p class="class-footer"> idm250 </p>
@@ -11,6 +12,7 @@
     <?php wp_nav_menu([
     'theme_location' => 'footer'
 ]); ?>
+</div>
 
 </footer>
 <?php wp_footer(); ?>
