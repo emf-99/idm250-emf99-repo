@@ -13,12 +13,12 @@
     font-family: 'Abril Fatface';
     src: url('/fonts/AbrilFatface-Regular.ttf');
 
-
 }
 
 @font-face {
-    font-family: 'ES Quartz';
-    src: url('/fonts/ESQuarzTRIAL-Regular.otf');
+    font-family: 'Bodoni Moda';
+    src: url('/fonts/BodoniModa-VariableFont_opsz,wght_2.ttf');
+
 }
 
 
@@ -117,6 +117,12 @@ footer {
 
 }
 
+.content {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .content h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
@@ -128,6 +134,32 @@ footer {
     justify-content: center;
     align-items: center;
 
+}
+
+a h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    color: black;
+    font-size: 2.5rem;
+    margin: 3rem 14rem 1rem 14rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.meta p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: black;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content h2 {
@@ -148,12 +180,33 @@ footer {
     text-transform: uppercase;
     font-size: 4rem;
     color: black;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0 5rem;
+    padding: 0 5rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
+}
+
+.content h3::before {
+    content: "\201C"; /* Left double quotation mark */
+}
+
+.content h4 {
+    font-family: 'Abril Fatface';
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: black;
+    margin: 0 5rem;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.content h4::after {
+    content: "\201D"; /* Left double quotation mark */
 }
 
 .wp-block-image {
@@ -173,39 +226,180 @@ footer {
     font-family: 'Times New Roman', Times, serif;
     color: black;
     font-size: 1.25rem;
-    margin: 1rem 5rem;
-    padding: 1rem 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
 }
 
+.content p:first-of-type::first-letter {
+    font-family: 'Angeline';
+    font-size: 5rem;
+}
 
 .content ul {
     font-family: 'Times New Roman', Times, serif;
-    list-style-type: circle;
+    list-style: circle;
     color: black;
-    list-style-type: disc;
     font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+
 }
 
 .content li {
     font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
     color: black;
     font-size: 1rem;
+    display: list-item;
 }
 
 strong {
     font-weight: normal;
   }
 
+.content blockquote p {
+    font-family: 'Bodoni Moda';
+    line-height: 3rem;
+    letter-spacing: -3px;
+    color: black;
+    font-size: 3rem;
+    margin: 0 2rem;
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content blockquote p::first-letter {
+    font-family: 'Angeline';
+    font-size: 5rem;
+}
+
+  .content blockquote cite {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: black;
+    margin: .25rem;
+    padding: .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .wp-block-pullquote {
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    padding: .25rem 0;
+    text-align: center;
+    }
+
+  .wp-block-separator {
+    padding: 0rem 5rem;
+    margin: 0rem 5rem;
+
+    }
+
+  .content .wp-block-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content .wp-block-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content .wp-block-group .wp-block-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content .wp-block-group .wp-block-group .wp-block-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content .wp-block-group .wp-block-group figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content .wp-block-group .wp-block-group  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 45vw;
+  }
+
+  .content ol {
+    font-family: 'Times New Roman', Times, serif;
+    list-style: auto;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem;
 
   }
+
+  .content .wp-block-buttons {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin: .25rem;
+    padding: .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content .wp-block-buttons .wp-block-button__link:first-child {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: #9F0202;
+    margin: .25rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F0F0F0;
+    border: #9F0202 solid 2px;
+    width: 30vw;
+  }
+
+  .content .wp-block-buttons .wp-block-button__link {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: #F0F0F0;
+    margin: .25rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #9F0202;
+    width: 25vw;
+  }
+
 
 @media only screen and (max-width: 999px) {
  
@@ -255,5 +449,110 @@ strong {
     header {
         flex-direction: column;
     }
+
+    a h1 {
+        font-size: 1.75rem;
+        margin: 3rem 7rem 1rem 7rem;
+    
+    }
+
+
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    a h1 {
+        font-size: 1.5rem;
+        margin: 1rem 2rem .5rem 2rem;
+    
+    }
+
+    .meta p {
+        font-size: .75rem;
+        margin: .5rem;
+        padding: .5rem;
+    }
+
+    .content p {
+        font-size: .75rem;
+    }
+
+    .content p:first-of-type::first-letter {
+        font-size: 1.5rem;
+    }
+
+    .content h2 {
+        font-size: 1rem;
+        margin: .5rem;
+        padding: .5rem;
+    
+    }
+    
+    .content h3, .content h4 {
+        font-size: 2rem;
+        margin: 0 1rem;
+        padding: 0 1rem;
+    
+    }
+
+    .content ul, .content ol{
+        font-size: .75rem;
+        margin: .5rem 2rem;
+        padding: .5rem;
+    }
+    
+    .content li {
+        font-size: .75rem;
+        margin: .5rem;
+        padding: .5rem;
+    }
+
+    .wp-block-separator {
+        padding: 0rem 2rem;
+        margin: 0rem 2rem;
+    }
+
+    .content blockquote p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 0 .5rem;
+        padding: 0 .5rem;
+      }
+    
+      .content blockquote p::first-letter {
+        font-size: 6rem;
+    }
+
+    .content .wp-block-group .wp-block-group figcaption {
+        font-size: .5rem;
+    }
+    
+    .content .wp-block-group .wp-block-group h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-size: .75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 70vw;
+    }
+
+
+    .content .wp-block-buttons {
+        font-size: .75rem;
+      }
+    
+      .content .wp-block-buttons .wp-block-button__link:first-child {
+        font-size: .75rem;
+        width: 60vw;
+      }
+    
+      .content .wp-block-buttons .wp-block-button__link {
+        font-size: .75rem;
+        width: 50vw;
+      }
+
+
 
   }
