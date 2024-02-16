@@ -4,6 +4,24 @@
     border: #9F0202
 }
 
+@font-face {
+    font-family: 'Angeline';
+    src: url('/fonts/Angeline.otf');
+}
+
+@font-face {    
+    font-family: 'Abril Fatface';
+    src: url('/fonts/AbrilFatface-Regular.ttf');
+
+
+}
+
+@font-face {
+    font-family: 'ES Quartz';
+    src: url('/fonts/ESQuarzTRIAL-Regular.otf');
+}
+
+
 li {
     color: #9F0202;
     display: flex;
@@ -98,6 +116,96 @@ footer {
     color: #9F0202;
 
 }
+
+.content h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    color: black;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: black;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content h3 {
+    font-family: 'Abril Fatface';
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: black;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wp-block-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wp-block-image img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.content p {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1.25rem;
+    margin: 1rem 5rem;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content ul {
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: circle;
+    color: black;
+    list-style-type: disc;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content li {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1rem;
+}
+
+strong {
+    font-weight: normal;
+  }
+
+  .wp-block-pullquote {
+
+  }
 
 @media only screen and (max-width: 999px) {
  
