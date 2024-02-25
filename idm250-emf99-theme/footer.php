@@ -7,7 +7,7 @@
         <p class="name-footer"> ella fromherz </p>
     </div>
 
-    <img class="footer-logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.png" alt="logo">
+    <img class="footer-logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.svg" alt="logo">
 
     <?php wp_nav_menu([
     'theme_location' => 'footer'
