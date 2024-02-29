@@ -729,6 +729,25 @@ strong {
         margin: 3rem 7rem 1rem 7rem;
     
     }
+  
+    div.wp-block-group__inner-container > ul > li, div.wp-block-group__inner-container > ol > li {
+      font-size: .5rem;
+      max-width: 20ch;
+      margin-top: .15rem;
+    }
+  
+    h5.wp-block-heading {
+      font-size: .75rem;
+    }
+  
+    h6.wp-block-heading {
+      font-size: .5rem;
+    }
+  
+   #left-side > a > h6.wp-block-heading {
+      font-size: 1.5rem;
+    }
+  
 
 
   }
