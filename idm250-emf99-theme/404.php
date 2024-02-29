@@ -1,12 +1,16 @@
-<?php get_header('simple'); ?>
+<?php get_header(); ?>
 
+
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/styles/main.css">
 <div class="container mx-auto my-8 text-center">
-    <h1 class="text-4xl font-bold mb-4">404 Not Found</h1>
-    <p class="text-lg mb-6">The page you are looking for might be in another castle.</p>
-    <p class="mb-8"><a href="<?php echo home_url(); ?>" class="text-blue-500 underline">Go back to the home page</a></p>
-    <?php wp_nav_menu([
-    'theme_location' => '404-menu'
-]); ?>
+    <h2 class="four_sub_text"> oops!</h2>
+    <h1 class="four_main_text">404</h1>
+    <h2 class="four_sub_text"> page not found!</h2>
+    <p class="four_text">Seems like you’ve ventured too far...<br>Click here to return to the home page</p>
+    <div class="center_home_button">
+        <button class="return_home_button"><a href="<?php echo home_url(); ?>">return home</a></button>
+    </div>
+
 </div>
 
 <?php get_footer(); ?>
