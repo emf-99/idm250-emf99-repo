@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/styles/main.css">
 <div class="container mx-auto my-8 text-center">
     <h2 class="four_sub_text"> oops!</h2>
     <h1 class="four_main_text">404</h1>

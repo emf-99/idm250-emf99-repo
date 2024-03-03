@@ -21,13 +21,47 @@
 
 }
 
-/* home.php (front-page.php) styles */
+/* front-page.php (front-page.php) styles */
 .home-section {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
+}
+
+.latest-posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0rem 3rem 0rem;
+    padding: 0;
+}
+
+.trending-posts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5rem 0rem 1rem 0rem;
+  padding: 0;
+}
+
+.section-title-home-trending, .section-title-home-latest {
+  font-family: 'Bodoni Moda';
+  line-height: 3rem;
+  letter-spacing: -3px;
+  font-size: 4rem;
+  color: #9F0202;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.first-word{
+  font-family: 'Angeline';
+  font-size: 5rem;
+  letter-spacing: 0px;
 }
 
 .home-container-style{
@@ -38,7 +72,7 @@
     padding: 0;
 }
 
-.home-grid {
+.post-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   grid-auto-rows: auto; 
@@ -47,18 +81,31 @@
 
 }
 
-
-.post-background {
+.grid-column {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: .5rem;
-    padding: 1rem;
+    padding: 2rem 1rem;
     background-color: #F0F0F0;
     border: #9F0202 solid 2px;
     width: 100%;
     height: 100%;
+}
+
+.post-grid > a:first-child {
+  display: none;
+}
+
+.grid-column > a > img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 50%;
 }
 
 .home-image-style {
@@ -69,7 +116,7 @@
   padding: 0;
   min-width: 200px;
   min-height: 200px;
-  border-radius: 50%; /* Make it a circle */
+  border-radius: 50%;
 }
 
 .home-post-category {
@@ -123,9 +170,189 @@
 }
 
 
+/* listing-template.php styles */
+.listing-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.listing-container-style{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.listing-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr); 
+grid-auto-rows: auto; 
+grid-auto-flow: dense; 
+gap: 20px; 
+}
+
+.listing-grid > a:first-child {
+  display: none;
+}
+
+.post-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: .5rem;
+  padding: 1rem;
+  background-color: #F0F0F0;
+  border: #9F0202 solid 2px;
+  width: 100%;
+  height: 100%;
+}
+
+.listing-image-style {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.listing-post-category {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: black;
+  margin: .25rem;
+  padding: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-categories > li {
+font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: .75rem;
+  color: black;
+  margin: .25rem;
+  padding: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listing-post-title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: #9F0202;
+  margin: .25rem;
+  padding: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 30ch;
+}
+
+.listing-post-author {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: .75rem;
+  color: black;
+  margin: .25rem;
+  padding: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-of-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.top-of-page a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-of-page h1 {
+  font-family: 'Bodoni Moda';
+  text-transform: lowercase;
+  line-height: 3rem;
+  letter-spacing: -3px;
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.top-of-page p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: black;
+  margin: .25rem;
+  padding: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80ch;
+  text-align: center;
+}
+
+.wp-block-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: .25rem;
+  padding: .25rem;
+}
+
+.wp-block-group .wp-block-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: .25rem;
+  padding: .25rem;
+}
+
+.wp-block-group .wp-block-buttons .wp-block-button__link {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #F0F0F0;
+  margin: .25rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9F0202;
+  border: #9F0202 solid 2px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.wp-block-group .wp-block-buttons .wp-block-button__link:first-child {
+  color: #9F0202;
+  background-color: #F0F0F0;
+}
+
 
 /* single.php styles */
-
 li {
     color: #9F0202;
     display: flex;
@@ -507,7 +734,6 @@ strong {
 
 
   /* 404.php styles */
-
 .four_sub_text {
     font-family: 'Bodoni Moda';
     line-height: 3rem;
@@ -584,8 +810,8 @@ strong {
     margin-top: 3rem;
   }
 
-  /* page.php styles */
 
+  /* page.php styles */
   #right-side{
     display: flex;
     justify-content: flex-start;
@@ -673,8 +899,6 @@ strong {
 
 
 
-
-
 @media only screen and (max-width: 999px) {
  
     .footer-container {
@@ -747,8 +971,20 @@ strong {
    #left-side > a > h6.wp-block-heading {
       font-size: 1.5rem;
     }
-  
+    .post-grid, .listing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr); 
+      grid-auto-rows: auto; 
+      grid-auto-flow: dense; 
+      gap: 20px; 
+    
+    }
 
+    .wp-block-group {
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
 
   }
 
@@ -831,7 +1067,6 @@ strong {
         max-width: 70vw;
     }
 
-
     .content .wp-block-buttons {
         font-size: .75rem;
       }
@@ -846,6 +1081,31 @@ strong {
         width: 50vw;
       }
 
+      .post-grid, .listing-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 3fr); 
+        grid-auto-rows: auto; 
+        grid-auto-flow: dense; 
+        gap: 20px; 
+      }
+      
+      .wp-block-group {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .wp-block-group .wp-block-buttons {
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .wp-block-group .wp-block-buttons .wp-block-button__link {
+        font-size: .75rem;
+        margin: .25rem;
+        padding: 1rem;
+      }
 
 
   }

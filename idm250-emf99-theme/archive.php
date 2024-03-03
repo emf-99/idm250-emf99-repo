@@ -4,7 +4,6 @@
 echo '<h2>' . single_cat_title('', false) . '</h2>';
 echo category_description();
 
-// output the title and the archive description and posts
 if (have_posts()) :
     while (have_posts()) : the_post();
         echo '<h2>' . get_the_title() . '</h2>';
