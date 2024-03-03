@@ -812,7 +812,7 @@ strong {
 
 
   /* page.php styles */
-  #right-side{
+  #right-side {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -821,7 +821,16 @@ strong {
     padding: 0;
   }
 
-  #right-side > li {
+  #left-sidebar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  #right-side > li, #left-sidebar > li {
     list-style: none;
     padding: 0;
     margin: 5rem 0;

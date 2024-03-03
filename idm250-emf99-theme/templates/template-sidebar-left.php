@@ -3,7 +3,6 @@
 /* Template Name: Page with Left Sidebar */
 
 get_header(); 
-
 ?>
 <h1>
 
@@ -27,16 +26,16 @@ get_header();
 
 <main class="flex flex-row">
 
-  <div class="w-1/3" id="right-side">
+  <div class="w-1/3" id="left-sidebar">
 
-  <?php
-            if (is_active_sidebar('left_sidebar')) :
-            dynamic_sidebar('left_sidebar');
+            <?php
+            if (is_active_sidebar('right_sidebar')) :
+            dynamic_sidebar('right_sidebar');
             endif;
             ?>
   </div>
 
-  <aside class="w-2/3"  id="left-side">
+  <aside class="w-2/3"  id="right-side-content">
             <?php
             echo get_the_content();
             ?>
