@@ -1,6 +1,7 @@
 <header> 
 
-<img class="header-logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.svg" alt="logo" class="w-30 h-16">
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="header-logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.svg" alt="logo" class="w-30 h-16"></a>
+
 
 <?php wp_nav_menu([
     'theme_location' => 'primary'

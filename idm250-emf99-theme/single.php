@@ -25,6 +25,6 @@
       ?>
 </div>
 
-<p> this is a single.php file </p>
+<!-- <p> this is a single.php file </p> -->
 
 <?php get_footer(); ?>

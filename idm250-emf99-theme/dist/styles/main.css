@@ -56,6 +56,7 @@
   color: #9F0202;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  cursor: default;
 }
 
 .first-word{
@@ -92,6 +93,22 @@
     border: #9F0202 solid 2px;
     width: 100%;
     height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.latest-posts-section>.post-grid>.grid-column:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(129, 129, 129, 0.3);
+}
+
+.grid-column:active {
+  transform: translateY(0);
+}
+
+.trending-posts-section>.post-grid>.grid-column:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
 }
 
 .post-grid > a:first-child {
@@ -181,12 +198,57 @@
 
 .wp-block-embed figcaption {
   font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: .75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  text-transform: uppercase;
+  font-size: .75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.trending-posts {
+  background-color: #9F0202;
+  padding: 2rem 0rem 4rem 0rem;
+}
+
+.trending-posts-section {
+  background-color: #9F0202; 
+}
+
+.section-title-home-trending {
+  background-color: #9F0202; 
+  color: #F0F0F0;
+  cursor: default;
+}
+
+.section-title-home-trending span{
+  background-color: #9F0202;
+  cursor: default;
+}
+
+.trending-posts-section>.post-grid{
+  background-color: #9F0202; 
+}
+
+.trending-posts-section>.post-grid>.grid-column{
+  background-color: #9F0202; 
+  border: #F0F0F0 solid 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.trending-posts-section>.post-grid>.grid-column>h3, 
+.trending-posts-section>.post-grid>.grid-column>h4, 
+.trending-posts-section>.post-grid>.grid-column>h5{
+  background-color: #9F0202; 
+  color: #F0F0F0;
+  cursor: default;
+}
+
+.trending-posts-section>.post-grid>.grid-column>.home-post-category>.post-categories,
+.trending-posts-section>.post-grid>.grid-column>.home-post-category>.post-categories>li{
+  background-color: #9F0202; 
+  color: #F0F0F0;
+
 }
 
 
@@ -196,7 +258,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0;
+    margin-bottom: 3.5rem;
     padding: 0;
 }
 
@@ -231,6 +293,7 @@ gap: 20px;
   border: #9F0202 solid 2px;
   width: 100%;
   height: 100%;
+  transition: transform 0.3s ease-in-out;
 }
 
 .listing-image-style {
@@ -363,12 +426,44 @@ font-family: Arial, Helvetica, sans-serif;
   background-color: #9F0202;
   border: #9F0202 solid 2px;
   border-radius: 50px;
-  cursor: pointer;
+  cursor: default;
+  transition: transform 0.3s ease-in-out;
 }
 
 .wp-block-group .wp-block-buttons .wp-block-button__link:first-child {
   color: #9F0202;
   background-color: #F0F0F0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.wp-block-group .wp-block-buttons .wp-block-button__link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(129, 129, 129, 0.3);
+}
+
+.wp-block-group .wp-block-buttons .wp-block-button__link:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(129, 129, 129, 0.3);
+}
+
+.wp-block-group .wp-block-buttons .wp-block-button__link:first-child:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(129, 129, 129, 0.3);
+}
+
+.wp-block-group .wp-block-buttons .wp-block-button__link:first-child:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(129, 129, 129, 0.3);
+}
+
+.post-background:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(129, 129, 129, 0.3);
+}
+
+.post-background:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(129, 129, 129, 0.3);
 }
 
 
@@ -402,7 +497,18 @@ li {
     border-top: 2px solid #9F0202;
     border-bottom: 2px solid #9F0202;
     width: 100vw;
+}
 
+.menu li {
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu li:hover {
+  transform: translateY(-1px);
+}
+
+.menu li:active {
+  transform: translateY(0);
 }
 
 header {
@@ -437,15 +543,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: .5rem;
-    padding: .5rem;
+    /* margin: .5rem; */
+    /* padding: .5rem; */
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
+    /* margin: 1rem; */
     padding: 5rem;
     border-top: 2px solid #9F0202;
     border-bottom: 2px solid #9F0202;
