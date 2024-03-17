@@ -27,8 +27,15 @@ function add_widgets()
         'name' => 'Left Sidebar',
         'id' => 'left_sidebar',
     ]);
+
+    register_sidebar([
+        'name' => 'Video Widget',
+        'id' => 'video_widget',
+    ]);
 }
 add_action('widgets_init', 'add_widgets');
+
+add_image_size('custom-thumbnail', 9999, 9999, false);
 
 
 

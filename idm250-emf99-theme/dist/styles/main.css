@@ -282,6 +282,15 @@ gap: 20px;
   display: none;
 }
 
+.listing-posts-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 3.5rem;
+}
+
 .post-background {
   display: flex;
   justify-content: center;
@@ -480,6 +489,16 @@ li {
     margin-right: 4.75rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.video>li>figure>div>iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 830px;
+    height: 410px;
 }
 
 #menu-primary-2024-menu {
