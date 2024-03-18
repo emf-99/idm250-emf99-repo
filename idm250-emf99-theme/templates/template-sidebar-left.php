@@ -45,6 +45,6 @@ get_header();
 
 </div>
 
-<p> this is a page.php file </p>
+<!-- <p> this is a page.php file </p> -->
 
 <?php get_footer(); ?>
