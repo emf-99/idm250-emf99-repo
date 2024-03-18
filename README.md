@@ -1,6 +1,7 @@
 # idm250-emf99-repo
+#
 # Wordpress Template for IDM250 by Ella Fromherz
-
+#
 #### Website:  https://www.ellafrom.com/idm250/
 #### Github: https://github.com/emf-99/idm250-emf99-repo/tree/main
 #### Description: My site is a fashion blog with blog posts.  The three categories are Trending, Fashion News, and Style Guides.  The site was built and designed to mimic the design of fashion magazines from the 2000s-2010s.
@@ -9,6 +10,7 @@
 
 # 
 ## Templates
+#
 
 #### Home Template: https://www.ellafrom.com/idm250/
 #### Github: https://github.com/emf-99/idm250-emf99-repo/blob/main/idm250-emf99-theme/front-page.php
