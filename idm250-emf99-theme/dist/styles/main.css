@@ -869,6 +869,7 @@ strong {
     background-color: #F0F0F0;
     border: #9F0202 solid 2px;
     width: 30vw;
+    cursor: pointer;
     transition: transform 0.3s ease-in-out;
   }
 
